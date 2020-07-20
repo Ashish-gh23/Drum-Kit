@@ -64,8 +64,8 @@ function makeSound(key){
 }
 
 function createAnimation(key){
-  var activeKey=document.querySelector("."+key);
-  activeKey.classList.add("pressed");
+  var activeKey=document.querySelector("."+key);// to pick element with a specific class
+  activeKey.classList.add("pressed"); //adding pressed class to that element
   setTimeout(function(){
     activeKey.classList.remove("pressed");
   },100);
